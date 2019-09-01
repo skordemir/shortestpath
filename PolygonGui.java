@@ -30,10 +30,10 @@ public class PolygonGui {
 	        polyList = new ArrayList<Polygon>();
 	        
 	    	ShortestPath path = new ShortestPath();
-			Point startingPoint = new Point(23, 23);
-			Point endPoint = new Point(129, 487);
-			path.getRandomPolygons(startingPoint,endPoint);
-			for (XPolygon polygon : path.polygonList) {
+		/*	Point startingPoint = new Point(23, 23);
+			Point endPoint = new Point(129, 487);*/
+			List<XPolygon>  polygonList= path.getRandomPolygons(800 );
+			for (XPolygon polygon : polygonList) {
 				int size = polygon.getPoints().size();
 				int xPoly[] = new int[size];
 				int yPoly[] = new int[size];

@@ -42,11 +42,10 @@ public class PolygonUtils {
 	 * @param vertsPerPoly
 	 * @param vertCount
 	 */
-	public static void assingRandomVertx(int numPolygons, Integer[] vertsPerPoly, Integer vertCount) {
+	public static void assingRandomVertx(int numPolygons, Integer[] vertsPerPoly ) {
 		for (int i = 0; i < numPolygons; i++) {
 			int numVerts = RandomUtil.getRandomInterval(polygonMinVerts, polygonMaxVerts);
 			vertsPerPoly[i] = numVerts;
-			vertCount += numVerts;
 		}
 	}
 
